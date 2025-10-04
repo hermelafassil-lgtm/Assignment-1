@@ -1,0 +1,88 @@
+<!-- States that the DOC type is a html file -->
+<!DOCTYPE html>
+<!--represents the root of an html document -->
+<html>
+<!-- Represents a meta colection of the data -->
+<head>
+  <meta charset="UTF-8">
+  <!-- About Me title-->
+  <title>About Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Base stylesheet for common styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Responsive style for mobile -->
+  <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
+   <!-- Responsive style for tablets -->
+  <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 601px) and (max-width: 1024px)">
+    <!-- Responsive style for latops -->
+  <link rel="stylesheet" href="laptop.css" media="screen and (min-width: 1025px)">
+  <!--Closing head tag -->
+</head>
+<!--Closing body tag  -->
+<body>
+  <div id="wrapper">
+    <header>
+      <!-- Size one header centered prints Hermela's Protfolio-->
+      <h1 style="text-align: center;">Hermela's Portfolio</h1>
+      <div id="left-column">
+    <!-- Size three header prints Links-->
+      <h3>Links</h3>
+      <ol>
+        <li><a class="button" href="index.html">Home</a></li>
+        <li><a class="button" href="about_me.html">About Me</a></li>
+        <li><a class="button" href="projects.html">Projects</a></li>
+        <li><a class="button" href="contact.html">Contact Me</a></li>
+      </ol>
+    </div>
+    </header>
+    <article>
+     <!-- Size three header prints About me-->
+      <h1>About Me</h1>
+      <p>
+      <!-- Paragraph with infomration about me-->
+        Hello, my name is Hermela Fassil. I am 18 years old and live in Ontario, Canada.
+        I am currently attending Ontario Tech University and I'm in my second year studying Technology Management.
+      </p>
+
+      <figure>
+        <img src="Assignment-1.jpg.png" width="210" height="210" alt="Bitmoji of Hermela">
+        <figcaption>
+            <!-- Header sign for Bitmoji-->
+          <h3>This image is a Bitmoji image of me</h3>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video 
+          id="video"
+          controls
+          width="210" height="210"
+          autoplay muted
+          loop
+          poster="on_record.png"
+          preload="auto">
+           <!-- Video of my-->
+          <source src="video.mp4.MOV" type="video/mp4">
+          <source src="video.mp4.MOV" type="video/ogv">
+            <!-- Prints error message is the brower does not support the vieo tag-->
+          Your browser does not support the video tag.
+        </video>
+        <br>
+        <button onclick="playPause()">Play or Pause the video</button>
+        <figcaption>
+          <h4>This video is about me</h4>
+        </figcaption>
+      </figure>
+    </article>
+
+    <footer>
+      <h4>Site made by Fassil</h4>
+    </footer>
+  <!--Closing div tag  -->
+  </div>
+<!--Closing body tag  -->
+</body>
+<!-- Closing html tag   -->
+</html>

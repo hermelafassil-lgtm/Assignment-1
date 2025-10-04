@@ -1,0 +1,94 @@
+<!-- States that the DOC type is a html file -->
+<!DOCTYPE html>
+<!--represents the root of an html document -->
+<html>
+<!-- Represents a meta colection of the data -->
+<head>
+  <meta charset="UTF-8">
+  <!-- About Me title-->
+  <title>About Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Base stylesheet for common styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Responsive style for mobile -->
+  <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
+   <!-- Responsive style for tablets -->
+  <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 601px) and (max-width: 1024px)">
+    <!-- Responsive style for latops -->
+  <link rel="stylesheet" href="laptop.css" media="screen and (min-width: 1025px)">
+  <!--Closing head tag -->
+</head>
+<!--Closing body tag  -->
+<body>
+        <div id="wrapper">
+              <header>
+                <h1 style="text-align: center;"> Information to contact me </h1>
+                <div id="left-column">
+            <!-- Ordern list for all the HTML files--> 
+            <ol>
+            <li> <a class="button"  href="index.html">Home</a>
+            <li> <a class="button"  href="about_me.html">About Me</a>
+            <li> <a class="button"  href="projects.html">Projects</a>
+            <li> <a class="button"  href="contact.html">Contact Me</a>
+            </div>
+            </header>
+            <!-- Form action with my email addres-->
+            <form action="mailto:hermela.fassil@ontariotechu.net?subject=Feedback from website"
+            enctype="text/plain" method="post" naFme="FeedbackForm"
+            >
+            <p> 
+                <!-- Label for user to print their first and last name-->
+                <label for="FName"> Please enter your First Name:   </label>
+                <!-- Takes the users imput-->
+                <input type="text" name="FName" size="40"
+                placeholder="Enter your first name" required>   <!-- Place holder for the users first name-->
+            </p>
+            <p>
+                <!-- Label for user to print their last name-->
+                <label for="LName">Please enter your Last Name:     </label>
+                <!-- Takes the users imput-->
+                <input type="text" name="LName" size="40"
+                placeholder="Enter your last name" required>         <!-- Place holder for the users last name-->
+
+            </p>
+            <p> 
+                <!-- Label for user to enter their email-->
+                <label for="Email">Email: </label>
+                <!-- Takes the users imput-->
+                <input type="email" name="Email" size="40"
+                placeholder="Enter your email address" required>  <!-- Place holder for the users last name-->
+            </p>
+            <p>
+                <!-- Label for user to enter their phone number-->
+                <label for="Number">Number: </label>
+                <!-- Takes the users imput-->
+                <input type="number" number="Number" size="40"
+                placeholder="Enter your Number" required>  <!-- Place holder for the users phone number-->
+            </p>
+            <p>
+                <!-- Label for user to add any entra comments-->
+                <label for="comments">Comments: </label>
+                <br>
+                <textarea name=" If there is any additioanl infomratio you would like me know please add it to the comments" cols="60" rows="8"></textarea>
+            </p>
+            <p>
+                <!-- Label for user to check the box if they want to be added to my email list-->
+                <input type="checkbox" name="maillist">
+                <label for="maillist">Put me in your e-list</label>                
+                </select>
+                        <br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+            </form>
+            <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+              <p2> Extra Contract Information </p2>
+              <p1>If you have any question please email me at hermela.fassil@ontariotechu.com or give me a phone call at 416-897-3350 </p1>   <!-- Prints my email as well as my phone number -->
+            </form>
+        <!--Closing div tag  -->
+        </div>
+<!--Closing body tag  -->
+    </body>
+<!-- Closing html tag   -->
+</html>
